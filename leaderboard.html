@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leaderboard — Project Brainless</title>
+  <meta name="description" content="Top Project Brainless players by XP and playtime.">
+  <meta name="theme-color" content="#0b0d10">
+  <meta property="og:title" content="Leaderboard — Project Brainless">
+  <meta property="og:description" content="Top Project Brainless players by XP and playtime.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/leaderboard.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="Main">
+      <a class="brand" href="index.html"><span class="brand-mark">PB</span><span>PROJECT BRAINLESS</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="rules.html">Rules</a>
+        <a href="appeals.html">Appeals</a>
+        <a class="btn btn-primary btn-sm" data-link="discord" href="#">Discord</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="page-head">
+      <div class="wrap">
+        <span class="eyebrow">// Live player stats</span>
+        <h1>Leaderboard</h1>
+        <p>XP is earned for kills, escapes, crafting and surviving rounds. Link your account with <code class="mono">.pblink</code> in the F1 console and <code class="mono">/pb-link</code> on Discord to check your own stats.</p>
+      </div>
+    </section>
+    <section class="block">
+      <div class="wrap">
+        <div id="lb-banner" class="notice banner" hidden></div>
+        <div class="lb-controls">
+          <div class="seg" role="group" aria-label="Sort by">
+            <button type="button" data-sort="xp" aria-pressed="true">XP</button>
+            <button type="button" data-sort="playtime" aria-pressed="false">Playtime</button>
+          </div>
+          <input class="search" id="lb-search" type="search" placeholder="Search players…" aria-label="Search players">
+          <span class="lb-meta" id="lb-updated"></span>
+        </div>
+        <div class="podium" id="lb-podium"></div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>#</th><th>Player</th><th>Level</th><th class="num">XP</th><th class="num hide-sm">Playtime</th></tr>
+            </thead>
+            <tbody id="lb-body"><tr><td colspan="5" class="empty">Loading…</td></tr></tbody>
+          </table>
+        </div>
+        <p class="muted" style="font-size:.85rem;margin-top:14px">Players who turn on Do Not Track or use <code class="mono">.pbprivacy optout</code> are never listed.</p>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <div>
+        <div class="mono" style="color:var(--text);font-weight:700">PROJECT BRAINLESS</div>
+        <div>© <span data-year></span> Project Brainless. Not affiliated with Northwood Studios.</div>
+      </div>
+      <div class="foot-links">
+        <a data-link="discord" href="#">Discord</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="rules.html">Rules</a>
+        <a data-link="appeals" href="#">Appeals</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

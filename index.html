@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Brainless — SCP:SL Server</title>
+  <meta name="description" content="A heavily modded SCP: Secret Laboratory server with 68 custom roles, custom items, SCP-914 crafting, proximity chat and round events.">
+  <meta name="theme-color" content="#0b0d10">
+  <meta property="og:title" content="Project Brainless — SCP:SL Server">
+  <meta property="og:description" content="A heavily modded SCP: Secret Laboratory server with 68 custom roles, custom items, SCP-914 crafting, proximity chat and round events.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="Main">
+      <a class="brand" href="index.html"><span class="brand-mark">PB</span><span>PROJECT BRAINLESS</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="rules.html">Rules</a>
+        <a href="appeals.html">Appeals</a>
+        <a class="btn btn-primary btn-sm" data-link="discord" href="#">Discord</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <span class="eyebrow">// SCP: Secret Laboratory community server</span>
+        <h1>Containment is<br>optional.</h1>
+        <p class="lead">Project Brainless is a heavily modded SCP:SL server: 68 custom roles, custom items and weapons, SCP-914 crafting, SCP proximity chat and chaotic round events. Same game, way more going on.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" data-link="discord" href="#">Join our Discord</a>
+          <a class="btn btn-ghost" href="leaderboard.html">View leaderboard</a>
+        </div>
+        <div class="connect">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span class="muted">Server</span>
+          <code data-config="serverAddress">—</code>
+          <button class="btn btn-ghost btn-sm" data-copy="serverAddress" type="button">Copy</button>
+        </div>
+        <div class="hazard" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <div class="grid grid-4">
+          <div class="card stat"><b>68</b><span>custom roles</span></div>
+          <div class="card stat"><b>12</b><span>custom items</span></div>
+          <div class="card stat"><b>10</b><span>SCP-914 recipes</span></div>
+          <div class="card stat"><b>3</b><span>round events</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">// About us</span>
+          <h2>What makes Brainless different</h2>
+          <p class="muted">Most rounds feel familiar until they don't. Roughly 80% of spawns roll a custom role, every SCP has variants, and the facility is full of gear you won't find on vanilla servers.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="card"><span class="icon">🎭</span><h3>Custom roles</h3><p class="muted">Locksmith Class-D who pick keycard doors, Mad Scientists with revolvers, MTF Swordsmen with SCP-1509, Chaos Juggernauts, and rare all-human rolls like Resilient and Big Boi.</p></div>
+          <div class="card"><span class="icon">🧟</span><h3>SCP variants</h3><p class="muted">Explosive zombies, a Doctor that revives the dead, venomous 939s, a 173 that explodes on death, a 096 that's always angry. Every round the SCPs play a little differently.</p></div>
+          <div class="card"><span class="icon">🧪</span><h3>Items & weapons</h3><p class="muted">Cluster and impact grenades, sticky containment foam, hacking chips, reinforcement radios, five flavours of SCP-500, a grenade launcher and a stun gun.</p></div>
+          <div class="card"><span class="icon">⚙️</span><h3>SCP-914 crafting</h3><p class="muted">Feed grenades, pills, keycards and radios into 914 to craft custom gear. Step in on Rough if you feel lucky.</p></div>
+          <div class="card"><span class="icon">🎙️</span><h3>SCP proximity chat</h3><p class="muted">Some SCPs can talk to nearby players. Negotiate, threaten, or just say hi before the jumpscare.</p></div>
+          <div class="card"><span class="icon">📈</span><h3>XP & stats</h3><p class="muted">Earn XP for kills, escapes and crafting, track your playtime, and climb the <a href="leaderboard.html">leaderboard</a>. Link Discord for <code class="mono">/pb-stats</code>.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="events">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">// Round events</span>
+          <h2>When things get weird</h2>
+          <p class="muted">Rare special rounds that need a full-ish server, and never two in a row.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="card tag" data-tag="12+ PLAYERS"><span class="icon">🦠</span><h3>Infection</h3><p class="muted">Low-health SCP-3114s hunt the humans. Anyone they kill gets back up as one of them.</p></div>
+          <div class="card tag" data-tag="16+ PLAYERS"><span class="icon">⚔️</span><h3>Deathmatch</h3><p class="muted">Chaos has taken the facility and MTF is raiding it back. Waves every 15 seconds; first to 40 kills wins.</p></div>
+          <div class="card tag" data-tag="10+ PLAYERS"><span class="icon">🦾</span><h3>Juggernaut</h3><p class="muted">One heavily armored Chaos Juggernaut against every NTF hunter. Kill it and you become the next one.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="join">
+      <div class="wrap">
+        <div class="grid grid-2" style="align-items:start">
+          <div>
+            <span class="eyebrow">// How to join</span>
+            <h2>Get in the facility</h2>
+            <ol class="steps">
+              <li>Launch <strong>SCP: Secret Laboratory</strong> on Steam.</li>
+              <li>Open the server browser and search <strong>Project Brainless</strong>, or use Direct Connect with <code class="mono" data-config="serverAddress">—</code>.</li>
+              <li>Read the <a href="rules.html">rules</a>, then join the <a data-link="discord" href="#">Discord</a> for events, updates and support.</li>
+            </ol>
+          </div>
+          <div class="cta">
+            <div>
+              <h2>Join the Discord</h2>
+              <p>Announcements, event pings, staff support, appeals and your linked stats with <code class="mono">/pb-stats</code>.</p>
+            </div>
+            <a class="btn btn-primary" data-link="discord" href="#">Join Discord</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <div>
+        <div class="mono" style="color:var(--text);font-weight:700">PROJECT BRAINLESS</div>
+        <div>© <span data-year></span> Project Brainless. Not affiliated with Northwood Studios.</div>
+      </div>
+      <div class="foot-links">
+        <a data-link="discord" href="#">Discord</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="rules.html">Rules</a>
+        <a data-link="appeals" href="#">Appeals</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
