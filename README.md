@@ -29,7 +29,7 @@ Custom domain: Cloudflare dashboard → your Worker → **Settings → Domains &
 
 ## Live leaderboard
 
-The leaderboard reads `GET {statsApiUrl}/api/v1/leaderboard?sort=xp|playtime&limit=100` from the Core plugin's stats API. Set it up with the guide in `BrainlessProjectPlugins/discord-bot/README.md`, then:
+The leaderboard reads `GET {statsApiUrl}/api/v1/leaderboard?sort=xp|playtime&limit=100` from the Core plugin's stats API. Set it up with the [Stats API guide](https://github.com/Swishhyy/BrainlessProjectPlugins/blob/main/docs/STATS_API.md), then:
 
 - set `statsApiUrl` in `public/assets/js/config.js`;
 - set `stats_api.allowed_origin` in the Core config to this site's address (e.g. `https://yourdomain.com` or the `*.workers.dev` address) so browsers may read it.
