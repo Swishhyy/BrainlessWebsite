@@ -46,7 +46,7 @@
       state.players = sample(state.sort);
       state.sample = true;
       state.updated = null;
-      showBanner('<strong>Sample data.</strong> The live leaderboard appears once the stats API is connected (<code class="mono">statsApiUrl</code> in <code class="mono">assets/js/config.js</code>).');
+      showBanner('<strong>Sample data.</strong> The live leaderboard appears once the stats API is connected (<code class="mono">statsApiUrl</code> in <code class="mono">public/assets/js/config.js</code>).');
       return render();
     }
     try {
