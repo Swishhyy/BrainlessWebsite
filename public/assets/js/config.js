@@ -9,5 +9,5 @@ window.SITE_CONFIG = {
   serverAddress: '50.20.249.92:9025',
   // Core stats API (see BrainlessProjectPlugins docs/STATS_API.md), no trailing slash.
   // Leave empty to show sample leaderboard data until the API is set up.
-  statsApiUrl: '',
+  statsApiUrl: 'https://api.projectbrainless.com',
 };
